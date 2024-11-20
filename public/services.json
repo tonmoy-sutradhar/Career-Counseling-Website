@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.pexels.com/photos/5668853/pexels-photo-5668853.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Career Counseling ",
+    "category": "Online",
+    "description": "Personalized career guidance to help you identify your goals and pathways.",
+    "pricing": 50,
+    "duration": "05-12-24 5:00 PM - 6:00 PM",
+    "counselor": "Dr. John Doe",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "image": "https://images.pexels.com/photos/7731360/pexels-photo-7731360.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Resume Review",
+    "category": "Offline",
+    "description": "Professional feedback on your resume to improve job prospects.",
+    "pricing": 30,
+    "duration": "06-12-24 10:00 AM - 11:00 AM",
+    "counselor": "Ms. Jane Smith",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "image": "https://images.pexels.com/photos/6930548/pexels-photo-6930548.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Group Career ",
+    "category": "Group",
+    "description": "Interactive sessions covering career opportunities and trends.",
+    "pricing": 20,
+    "duration": "07-12-24 3:00 PM - 4:30 PM",
+    "counselor": "Mr. Alan Brown",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "image": "https://images.pexels.com/photos/5313131/pexels-photo-5313131.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Interview Preparation",
+    "category": "Online",
+    "description": "Mock interviews and tips to help you ace your job interviews.",
+    "pricing": 40,
+    "duration": "08-12-24 6:00 PM - 7:00 PM",
+    "counselor": "Ms. Rebecca Green",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "image": "https://images.pexels.com/photos/4623306/pexels-photo-4623306.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Scholarship Guidance",
+    "category": "Online",
+    "description": "Advice on securing scholarships for higher education.",
+    "pricing": 35,
+    "duration": "09-12-24 4:00 PM - 5:00 PM",
+    "counselor": "Dr. Emily Turner",
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "image": "https://images.pexels.com/photos/7693099/pexels-photo-7693099.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Internship Counseling",
+    "category": "Offline",
+    "description": "Support in finding and applying for internships in your field.",
+    "pricing": 25,
+    "duration": "10-12-24 11:00 AM - 12:00 PM",
+    "counselor": "Mr. Kevin Carter",
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "image": "https://images.pexels.com/photos/7779767/pexels-photo-7779767.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Skill Development",
+    "category": "Group",
+    "description": "Workshops to enhance your skills for better career opportunities.",
+    "pricing": 15,
+    "duration": "11-12-24 2:00 PM - 3:30 PM",
+    "counselor": "Ms. Laura Scott",
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "image": "https://images.pexels.com/photos/5990038/pexels-photo-5990038.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Admission Counseling",
+    "category": "Online",
+    "description": "Guidance on selecting the right college and application processes.",
+    "pricing": 60,
+    "duration": "12-12-24 5:30 PM - 6:30 PM",
+    "counselor": "Dr. Rachel Wilson",
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "image": "https://images.pexels.com/photos/7681979/pexels-photo-7681979.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Networking Skills Coaching",
+    "category": "Offline",
+    "description": "Learn how to build professional networks effectively.",
+    "pricing": 20,
+    "duration": "13-12-24 3:00 PM - 4:00 PM",
+    "counselor": "Mr. Samuel White",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "image": "https://images.pexels.com/photos/7731363/pexels-photo-7731363.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "serviceName": "Job Hunting ",
+    "category": "Online",
+    "description": "Strategies to optimize your job search and applications.",
+    "pricing": 50,
+    "duration": "14-12-24 7:00 PM - 8:00 PM",
+    "counselor": "Ms. Victoria Blake",
+    "rating": 4.8
+  }
+]
