@@ -4,7 +4,7 @@
 
 ## Live Link
 
-- [Career Counseling Website](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [Career Counseling Website](https://assignment-9-a1a4a.web.app/)
 
 ## Website Details
 
