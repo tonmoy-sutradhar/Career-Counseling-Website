@@ -49,14 +49,33 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: async ({ params }) => {
-          const res = await fetch("services.json");
-          const data = await res.json();
+          try {
+            // Ensure the correct relative path to public/services.json
+            const res = await fetch("/services.json");
 
-          const singleData = data.find((f) => f.id == params.id);
+            if (!res.ok) {
+              throw new Error(
+                `Failed to fetch services.json: ${res.statusText}`
+              );
+            }
 
-          return singleData;
+            const data = await res.json();
+
+            // Match the data with the `id` from params
+            const singleData = data.find((f) => f.id == params.id);
+
+            if (!singleData) {
+              throw new Error(`No data found for ID: ${params.id}`);
+            }
+
+            return singleData;
+          } catch (error) {
+            console.error("Loader error:", error.message);
+            throw error; // Propagate the error to show an error boundary or message
+          }
         },
       },
+
       {
         path: "/login",
         element: <Login></Login>,
@@ -72,8 +91,23 @@ const router = createBrowserRouter([
       {
         path: "/client",
         element: <Client></Client>,
-        loader: () => fetch("client.json"),
+        loader: async () => {
+          try {
+            const res = await fetch("/client.json"); // Ensure the correct path to the public folder
+
+            if (!res.ok) {
+              throw new Error(`Failed to fetch client.json: ${res.statusText}`);
+            }
+
+            const data = await res.json();
+            return data;
+          } catch (error) {
+            console.error("Loader error:", error.message);
+            throw error; // Propagate the error for error handling
+          }
+        },
       },
+
       {
         path: "/feedback",
         element: (
@@ -90,14 +124,30 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: async ({ params }) => {
-          const res = await fetch("client.json");
-          const data = await res.json();
+          try {
+            // Ensure the correct path to the JSON file
+            const res = await fetch("/client.json");
+            if (!res.ok) {
+              throw new Error(`Failed to fetch client.json: ${res.statusText}`);
+            }
 
-          const detailsData = data.find((f) => f.id == params.id);
+            const data = await res.json();
 
-          return detailsData;
+            // Find the data that matches the ID from params
+            const detailsData = data.find((f) => f.id == params.id);
+
+            if (!detailsData) {
+              throw new Error(`No data found for ID: ${params.id}`);
+            }
+
+            return detailsData;
+          } catch (error) {
+            console.error("Loader error:", error.message);
+            throw error; // Propagate error for error handling
+          }
         },
       },
+
       {
         path: "*",
         element: (
